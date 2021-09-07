@@ -1,11 +1,11 @@
 # graph.bat
-graph.bat is a fast Batch utility script to generate bar graphs. Given a file, this script will generate a bar graph and put it into the variable ```final```. For example:
+graph.bat is a fast Batch utility script to generate bar graphs. Given a file, this script will generate a bar graph into the variable ```final```. For example:
 
 ```Batch
 CALL GRAPH "input.txt" /X 1 /Y 2 /C █ /A 3 /YS 5 /W 1 /D 2 /NS 3
 ```
 
-Will take the data from "input.txt", make a graph at position 1;2 using █ characters, divide the data by 3 with a Y scale of 5, with bars of width 1 and distance 2, and a Y offset by 3. This script is only needs one pass through the data, since to generate the bars, it takes the maximum bar length and subtracts/adds to it, so it doesn't iterate again for each bar.
+Will take the data from "input.txt", make a graph at position 1;2 using █ characters, divide the data by 3 with a Y scale of 5, with bars of width 1 and distance 2, and a Y offset by 3. This script only requires a single pass through the data, since to generate the bars, it takes the maximum bar length and subtracts/adds to it, so it doesn't iterate again for each bar.
 
 ## Parameters
 Each parameter has a default, so you don't have to specify each one. The first argument is always the file name; the rest can be put in any order.
